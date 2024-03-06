@@ -2227,9 +2227,9 @@ class HVO_Sequence(object):
             if total_autocorrelation_curve[i] < 0:
                 rectified_autocorrelation[i] = 0
 
-        # weird syntax due to 2.x/3.x compatibility issues here todo: rewrite for 3.x
-        peaks = np.asarray(find_peaks(rectified_autocorrelation))
-        peaks = peaks[0] + 1  # peaks = lags
+        # TODO: this has been edited from the original code. Check if it's correct
+        peaks = np.asarray(find_peaks(rectified_autocorrelation)[0])
+        peaks = peaks + 1  # peaks = lags
 
         inharmonic_sum = 0.0
         inharmonic_peaks = []

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='hvo_sequence',
-    version='0.1.0',
+    version='0.1.1',
     author='Behzad Haki, Marina Nieto, Teresa Pelinski',
     description="A Piano Roll Representation for Drums Similar to Sequence Representations in Magenta's GrooVAE",
     long_description=open('README.md').read(),
